@@ -99,7 +99,7 @@ fn main() {
         let out: Vec<(String,String)> = search(&entries,args[1..].into()).into_iter().map(|entry| (entry.title,entry.hash)).collect();
         for entry in out{
             println!("Title:    {}",entry.0);
-            println!("Link:     magnet:?xt.1={}",entry.1);
+            println!("Link:     magnet:?xt=urn:btih:{}",entry.1);
             println!("");
 
     }
